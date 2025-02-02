@@ -6,10 +6,20 @@
   box-sizing: border-box;
 }
 
+.page-container {
+  min-height: 100vh; /* Устанавливаем минимальную высоту контейнера на всю высоту видимой части окна браузера */
+  position: relative; /* Устанавливаем позицию контейнера как относительную */
+  padding-bottom: 50px; /* Добавляем заполнитель внизу страницы */
+}
+
 body {
   margin: 0;
   padding: 0;
+  padding-bottom: 50px; /* Добавляем заполнитель внизу страницы */
+  min-height: 100vh; /* Устанавливаем минимальную высоту body на всю высоту видимой части окна браузера */
+  position: relative; /* Устанавливаем позицию body как относительную */
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -35,9 +45,21 @@ html {
 }
 
 .navbar-mod {
-  background-color: rgb(10, 10, 48);
+  text-align: center;
+  background-color: #452c8b;
   color: white !important;
+  height: auto; /* Заменяем фиксированную высоту на автоматическую */
+  line-height: inherit; /* Удаляем заданное значение, чтобы оно наследовалось от содержимого */
+  font-size: 20px; /* Можете оставить или изменить размер шрифта по вашему усмотрению */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Добавляем z-index, чтобы navbar оставался поверх других элементов */
+  padding:  7px; /* Добавляем немного отступов вокруг содержимого navbar */
+  box-sizing: border-box; /* Учитываем отступы в общей ширине/высоте элемента */
 }
+
+
 .liner-gradient-sky {
   background: #1488cc;
   background: -webkit-linear-gradient(to right, #2b32b2, #1488cc);
@@ -69,7 +91,7 @@ a {
 
 .card-header,
 .card-footer {
-  background-color: rgb(10, 10, 48);
+  background-color: #452c8b;
 }
 
 .cd {
@@ -81,15 +103,18 @@ a {
 
 .cd:hover {
   transform: scale(1.1);
+
 }
 
 .container {
   margin-top: 1.5rem;
+
 }
 
 .container-announcement {
   max-width: 40vw;
   min-width: 380px;
+
 }
 
 .profile {
@@ -122,9 +147,10 @@ a {
 }
 
 .searchbar {
-  border-radius: 3px;
+  border-radius: 26px;
   border: none !important;
 }
+
 td,
 th {
   vertical-align: middle !important;

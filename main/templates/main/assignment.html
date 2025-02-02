@@ -1,6 +1,6 @@
 {% extends 'index.html' %}
 {% load static %}
-{% block title %} {{ course.name }} | eLMS {% endblock title %}
+{% block title %} {{ course.name }} | NovaLore {% endblock title %}
 {% block profile %}
 {% url 'profile' faculty.faculty_id %}
 {% endblock %}
@@ -19,7 +19,7 @@
    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
       <ol class="breadcrumb p-3">
          <li class="breadcrumb-item fw-bold"><a style="color: rgb(10, 10, 48)" href="{% url 'facultyCourses' %}">My
-            courses</a>
+            Classrooms</a>
          </li>
          <li class="breadcrumb-item fw-bold"><a style="color: rgb(10, 10, 48)"
             href="{% url 'faculty' course.code %}">{{ course.name }}</a></li>
@@ -40,7 +40,7 @@
                   <div class="mb-3">
                      {{ field.label_tag }}
                      {{ field }}
-                     <span style="color:red">{{ field.errors }}</span>
+                     <span style="color:rgb(255, 255, 255)">{{ field.errors }}</span>
                   </div>
                   {% endfor %}
                   <p class="fw-bold" id="fileError"></p>

@@ -27,13 +27,13 @@
          <ol class="breadcrumb p-3">
             {% if faculty %}
             <li class="breadcrumb-item fw-bold"><a style="color: rgb(10, 10, 48)" href="{% url 'facultyCourses' %}">My
-                  Courses</a>
+                  Classrooms</a>
             </li>
             <li class="breadcrumb-item fw-bold"><a style="color: rgb(10, 10, 48)"
                   href="{% url 'faculty' course.code %}">{{ course.name }}</a></li>
             {% else %}
             <li class="breadcrumb-item fw-bold"><a style="color: rgb(10, 10, 48)" href="{% url 'myCourses' %}">My
-                  Courses</a>
+               Classrooms</a>
             </li>
             <li class="breadcrumb-item fw-bold"><a style="color: rgb(10, 10, 48)"
                   href="{% url 'course' course.code %}">{{ course.name }}</a></li>

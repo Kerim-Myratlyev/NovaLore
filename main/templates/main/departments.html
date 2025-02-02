@@ -1,5 +1,5 @@
 {% extends 'index.html' %}
-{% block title %} Departments | eLMS {% endblock title %}
+{% block title %} Departments | NovaLore {% endblock title %}
 {% block profile %}
 {% if faculty  %} {% url 'profile' faculty.faculty_id %}
 {% else %} {% url 'profile' student.student_id %}
@@ -39,7 +39,7 @@
                <th>Dept. ID</th>
                <th>No. of Students</th>
                <th>Total Faculty</th>
-               <th>Total Courses</th>
+               <th>Total Classrooms</th>
             </tr>
          </thead>
          <tbody>

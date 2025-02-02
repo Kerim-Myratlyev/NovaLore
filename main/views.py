@@ -13,6 +13,10 @@ from django.core import validators
 from django import forms
 
 
+def home(request):
+    return render(request, 'home.html')
+
+
 class LoginForm(forms.Form):
     id = forms.CharField(label='ID', max_length=10, validators=[
                          validators.RegexValidator(r'^\d+$', 'Please enter a valid number.')])

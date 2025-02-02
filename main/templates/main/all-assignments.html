@@ -1,6 +1,6 @@
 {% extends 'index.html' %}
 {% load static %}
-{% block title %} Assignments | {{ course.name }} | eLMS {% endblock title %}
+{% block title %} Assignments | {{ course.name }} | NovaLore {% endblock title %}
 {% block profile %}
 {% url 'profile' faculty.faculty_id %}
 {% endblock %}
@@ -21,7 +21,7 @@
          <ol class="breadcrumb p-3">
             <li class="breadcrumb-item fw-bold"><a style="color: rgb(10, 10, 48)"
                href="{% url 'facultyCourses' %}">My
-               Courses</a>
+               Classrooms</a>
             </li>
             <li class="breadcrumb-item fw-bold"><a style="color: rgb(10, 10, 48)"
                href="{% url 'faculty' course.code %}">{{ course.name }}</a></li>

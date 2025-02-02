@@ -1,5 +1,5 @@
 """
-ASGI config for eLMS project.
+ASGI config for NovaLore project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 

@@ -1,6 +1,6 @@
 {% extends 'index.html' %}
 {% load static %}
-{% block title %}Assignments | {{ course.name }} | eLMS {% endblock title %}
+{% block title %}Assignments | {{ course.name }} | NovaLore {% endblock title %}
 {% block profile %}
 {% url 'profile' student.student_id %}
 {% endblock %}
@@ -20,7 +20,7 @@
       <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
          <ol class="breadcrumb p-3">
             <li class="breadcrumb-item fw-bold"><a style="color: rgb(10, 10, 48)" href="{% url 'myCourses' %}">My
-               Courses</a>
+               Classrooms</a>
             </li>
             <li class="breadcrumb-item fw-bold"><a style="color: rgb(10, 10, 48)"
                href="{% url 'course' course.code %}">{{ course.name }}</a></li>
@@ -34,7 +34,7 @@
       <div class="course-section p-3 m-3 shadow-sm d-flex justify-content-center">
          <div class="fw-bold fs-5 course_name">{{course.department}}-{{course.code}} : {{course.name}}</div>
       </div>
-      <!-- course name ends -->
+      <!-- Classrooms name ends -->
       <!-- assignment section starts -->
       <div class="course-section p-3 m-3 shadow">
          <h4 class="fw-bold" style="color: rgb(10, 10, 48);"><img src="{% static 'images/icon/open-book.png' %}"
