@@ -86,3 +86,11 @@ local_settings.py
 .env
 db.sqlite3
 media/
+
+# Virtual environments
+venv/
+myenv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
